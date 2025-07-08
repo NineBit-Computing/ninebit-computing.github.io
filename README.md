@@ -1,2 +1,0 @@
-# ciq-docs
-Product documentation
