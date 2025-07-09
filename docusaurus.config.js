@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'NineBit CIQ Docs',
   tagline: 'CIQ is cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon2.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -83,10 +83,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+            alt: 'My Site Logo',
+            src: 'img/CIQ_Logo.png',
         },
         items: [
           {
@@ -97,7 +97,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/NineBit-Computing',
             label: 'GitHub',
             position: 'right',
           },
@@ -119,16 +119,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Slack',
+                href: 'https://join.slack.com/t/ninebit-ciq-community/shared_invite/zt-38oi663on-9R~0J8echKGQ8NV2zRKJZA',
               },
               {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/NinebitC',
               },
             ],
           },
@@ -141,12 +137,12 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/NineBit-Computing',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © <a href="https://ninebit.in" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">NineBit Computing</a> ${new Date().getFullYear()}.`,
       },
       prism: {
         theme: prismThemes.github,

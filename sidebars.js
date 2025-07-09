@@ -21,6 +21,8 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     'intro',
+    'quickstart',
+    'authentication',
     {
       type: 'category',
       label: 'Tutorial',
