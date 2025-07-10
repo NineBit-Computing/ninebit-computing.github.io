@@ -72,6 +72,15 @@ client.ragQuery("Hello?")
 </TabItem>  
 </Tabs> 
 
+=======
+```bash
+python
+
+# Python example
+response = client.rag_query("Hello?")
+print(response)
+```
+
 🙋 Need Help?
 If your key isn’t working or you’ve lost it:
 

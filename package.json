@@ -1,12 +1,13 @@
 {
   "name": "ciq-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "homepage": "https://ninebit-computing.github.io/ciq-docs",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "predeploy": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
