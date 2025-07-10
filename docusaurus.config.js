@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'NineBit CIQ Docs',
   tagline: 'CIQ is cool',
-  favicon: 'img/favicon2.ico',
+  favicon: 'img/favicon3.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -47,14 +47,30 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          // sidebarPath: require.resolve('./sidebars.js'),
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/', // or '/docs' if preferred
+          sidebarPath: require.resolve('./sidebars.js'),
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Next 🚧',
+              banner: 'none',
+            },
+            '1.0.0': {
+            label: 'v1 (Stable)',
+            banner: 'none',
+            },
+          },           
         },
+
+        // docs: {
+        //   routeBasePath: '/',
+        //   // sidebarPath: require.resolve('./sidebars.js'),
+        //   sidebarPath: './sidebars.js',
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl:
+        //     // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
@@ -81,9 +97,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Preview_image.png',
       navbar: {
-        title: '',
+        title: 'Docs',
         logo: {
             alt: 'My Site Logo',
             src: 'img/CIQ_Logo.png',
@@ -94,6 +110,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: false,
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -125,6 +146,10 @@ const config = {
               {
                 label: 'X',
                 href: 'https://x.com/NinebitC',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/ninebit-computing/',
               },
             ],
           },

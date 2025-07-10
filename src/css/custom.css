@@ -28,3 +28,8 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Increase navbar title font size */
+.navbar__title {
+  font-size: 1.75rem; /* Default is around 1.25rem — increase as needed */
+  font-weight: 500;  /* Optional: make it bolder */
+}
