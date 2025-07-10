@@ -14,8 +14,6 @@ const config = {
   tagline: 'CIQ is cool',
   favicon: 'img/favicon3.ico',
 
-
-
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -101,9 +99,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/Preview_image.png',
       navbar: {
-
         title: 'Docs',
-
         logo: {
             alt: 'My Site Logo',
             src: 'img/CIQ_Logo.png',
