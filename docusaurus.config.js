@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'NineBit CIQ Docs',
   tagline: 'CIQ is cool',
-  favicon: 'img/favicon2.ico',
+  favicon: 'img/favicon3.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -81,9 +81,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Preview_image.png',
       navbar: {
-        title: '',
+        title: 'DOCS',
         logo: {
             alt: 'My Site Logo',
             src: 'img/CIQ_Logo.png',
@@ -93,7 +93,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'HOME',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -125,6 +125,10 @@ const config = {
               {
                 label: 'X',
                 href: 'https://x.com/NinebitC',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/ninebit-computing',
               },
             ],
           },
