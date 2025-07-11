@@ -23,8 +23,6 @@ CIQ is a secure, end-to-end **AI platform for unstructured documents** — desig
 
 - 📘 [Quickstart Guide](./quickstart) – Ingest data and run your first RAG query  
 - 🔐 [Authentication Setup](./authentication) – API key & token info  
-- 🧠 [API Reference (SDK)](https://github.com/ninebit-computing/ciq-sdk) – Full method list with examples  
-- 📝 [Release Notes & Changelog](./changelog) – New features and fixes  
 
 ---
 
