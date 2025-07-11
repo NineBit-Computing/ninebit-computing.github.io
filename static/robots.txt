@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ninebit-computing.github.io/ciq-docs/sitemap.xml

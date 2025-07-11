@@ -4,6 +4,7 @@ title: Authentication
 sidebar_label: Authentication / API Key
 slug: /authentication
 description: Learn how to generate and use your CIQ API key for authentication with the NineBit CIQ SDK.
+keywords: [CIQ, authentication, API key, NineBit]
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

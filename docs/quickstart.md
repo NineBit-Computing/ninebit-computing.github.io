@@ -4,7 +4,15 @@ title: Quickstart
 sidebar_label: CIQ SDK Installation
 description: Learn how to install and use the NineBit CIQ SDK.
 slug: /quickstart
+keywords:
+  - CIQ
+  - NineBit
+  - document intelligence
+  - RAG
+  - SDK installation
+  - semantic search
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -27,14 +35,14 @@ This guide will help you:
 <Tabs>
 <TabItem value="python" label="Python" default>
 
-```bash
+```python
 pip install ninebit-ciq
 ```
 </TabItem>      
 
-<TabItem value="js" label="js" default>
+<TabItem value="js" label="JavaScript" default>
 
-```bash
+```js
 npm install @ninebit/ciq
 ```
 </TabItem>  
@@ -46,7 +54,7 @@ npm install @ninebit/ciq
 <Tabs>
 <TabItem value="python" label="Python" default>
 
-```bash
+```python
 from ninebit_ciq import NineBitCIQClient
 
 client = NineBitCIQClient(
@@ -55,9 +63,9 @@ client = NineBitCIQClient(
 ```
 </TabItem>      
 
-<TabItem value="js" label="js" default>
+<TabItem value="js" label="JavaScript" default>
 
-```bash
+```js
 // Use import for ESM
 import { CIQClient } from '@ninebit/ciq';
 
@@ -81,7 +89,7 @@ const client = new CIQClient(apiKey);
 <Tabs>
 <TabItem value="python" label="Python" default>
 
-```bash
+```python
 def on_done(error, data):
     if error:
         print(f"Ingest_file failed: {error}")
@@ -92,9 +100,9 @@ client.ingest_file(file="files/sample.pdf", callback=on_done)
 ```
 </TabItem>      
 
-<TabItem value="js" label="js" default>
+<TabItem value="js" label="JavaScript" default>
 
-```bash
+```js
 await client.ingestFile('files/sample.pdf');
 ```
 </TabItem>  
@@ -105,16 +113,16 @@ await client.ingestFile('files/sample.pdf');
 <Tabs>
 <TabItem value="python" label="Python" default>
 
-```bash
+```python
 query = "What are land breeze?"
 response = client.rag_query(query=query)
 print(f"Query response is {response}")
 ```
 </TabItem>      
 
-<TabItem value="js" label="js" default>
+<TabItem value="js" label="JavaScript" default>
 
-```bash
+```js
 const query = "What are land breeze?";
 const response = await client.ragQuery(query);
 console.log("Query response is", response);
