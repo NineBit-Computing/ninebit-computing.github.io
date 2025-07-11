@@ -145,6 +145,23 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Company',
+            items: [
+              {
+                label: 'About Us',
+                href: 'https://ninebit.in/ciq',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://ninebit.in/privacy-policy/',
+              },
+                            {
+                label: 'Terms & Conditions',
+                href: 'https://ninebit.in/terms-and-conditions/',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © <a href="https://ninebit.in" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">NineBit Computing</a> ${new Date().getFullYear()}.`,
       },
