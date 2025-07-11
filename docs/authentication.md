@@ -29,31 +29,47 @@ To access the **NineBit CIQ SDK**, you need a valid API key. This key authorizes
 <Tabs>
 <TabItem value="python" label="Python" default>
 
-```bash
+```python
 client = NineBitCIQClient(
     api_key="<your-api-key>"
 )
 ```
 </TabItem>      
 
-<TabItem value="js" label="js" default>
+<TabItem value="js" label="JavaScript" default>
 
-```bash
+```js
 const apiKey = process.env.API_KEY || '';
 const client = new CIQClient(apiKey);
 ```
 </TabItem>  
 </Tabs> 
 
-🧪 Test Your Authentication
-To check if your API key is working, try uploading a test file or sending a query. If the key is invalid, the SDK will return an authentication error.
-```bash
-python
+### 🧪 Test Your Authentication
 
-# Python example
+To check if your API key is working, try uploading a test file or sending a query. If the key is invalid, the SDK will return an authentication error.
+
+#### Example
+
+<Tabs>
+<TabItem value="python" label="Python" default>
+
+```python
 response = client.rag_query("Hello?")
 print(response)
 ```
+</TabItem>      
+
+<TabItem value="js" label="JavaScript" default>
+
+```js
+const response = await client.ragQuery("Hello?");
+console.log(response);
+```
+</TabItem>  
+</Tabs>
+
+
 🙋 Need Help?
 If your key isn’t working or you’ve lost it:
 
