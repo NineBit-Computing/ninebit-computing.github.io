@@ -1,6 +1,6 @@
 {
   "name": "ciq-docs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "homepage": "https://ninebit-computing.github.io/ciq-docs",
   "scripts": {
@@ -13,7 +13,11 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "test": "cypress run",
+    "open": "cypress open",
+    "verify": "cypress verify",
+    "postinstall": "cypress install"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -26,7 +30,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/types": "3.8.1"
+    "@docusaurus/types": "3.8.1",
+    "cypress": "^14.5.1"
   },
   "browserslist": {
     "production": [
