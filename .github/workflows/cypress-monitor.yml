@@ -1,6 +1,12 @@
 name: Hourly Cypress E2E Monitoring
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: '0 * * * *'  # Every hour
   workflow_dispatch:
