@@ -28,3 +28,57 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Navbar background, shadow, and color */
+.navbar {
+  background-color: #303846;;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 80px; /* ⬆️ increase height */
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo size */
+.navbar__logo img {
+  max-height: 40px;
+  border-radius: 6px;
+}
+
+/* Navbar item spacing and hover effect */
+.navbar__item {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: white !important;
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+}
+
+.navbar__item:hover {
+  color: #FFD700 !important; /* gold hover */
+  text-decoration: underline;
+}
+
+/* Highlight the current active nav item */
+.navbar__link--active {
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.2rem;
+}
+
+/* Adjust external links (GitHub, website) */
+.navbar__item[href*="http"]::after {
+  content: ' ↗';
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Mobile menu enhancements */
+.navbar__toggle {
+  color: white;
+}
+
+/* Change navbar title color */
+.navbar__title {
+  color: #FFFFFF !important; /* Use your preferred color */
+  font-weight: 600; /* Optional: make it bold */
+  font-size: 1.5rem;
+}

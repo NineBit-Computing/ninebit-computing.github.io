@@ -16,7 +16,7 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 🚀Welcome to the Quickstart Guide
+# 🚀 Get Started with CIQ in Minutes
 
 
 Welcome to **NineBit CIQ** — your private, developer-friendly platform for building intelligent document workflows using RAG (Retrieval-Augmented Generation), classification, and taxonomy extraction.
@@ -129,7 +129,6 @@ console.log("Query response is", response);
 ```
 </TabItem>  
 </Tabs>    
-
 
 
 ```
