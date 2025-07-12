@@ -5,9 +5,9 @@ describe("SaaS App Uptime Check", () => {
   });
 
   it("should allow login and load the dashboard", () => {
-    cy.login("testuser@example.com", "securePassword123");
+    cy.login("khushi.ojha@ninebit.in", "Norton@1234");
 
     // After login, check that a key dashboard element exists
-    cy.contains("Welcome,").should("be.visible");
+    cy.contains("Home").should("be.visible");
   });
 });

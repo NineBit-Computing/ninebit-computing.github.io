@@ -1,7 +1,7 @@
 // cypress/support/commands.js
 
 Cypress.Commands.add("login", (email, password) => {
-  cy.visit("/login"); // Adjust path based on your app's login route
+  cy.visit("https://ciq.ninebit.in/login"); // Adjust path based on your app's login route
 
   cy.get('input[name="email"]').type(email);
   cy.get('input[name="password"]').type(password);
