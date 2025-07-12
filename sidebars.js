@@ -24,7 +24,9 @@ const sidebars = {
     'quickstart',
     'authentication',
     'ingestion',
+    'ciq-components',
     'faq',
+  
     // {
     //   type: 'category',
     //   label: 'Tutorial',
