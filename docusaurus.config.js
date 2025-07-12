@@ -95,6 +95,10 @@ const config = {
             position: 'left',
             label: 'HOME',
           },
+          {to: '/quickstart', label: 'Quickstart', position: 'left'},
+          {to: '/components', label: 'Components', position: 'left'},
+          {to: 'https://ciq.ninebit.in', label: 'Website', position: 'right'},
+    
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/NineBit-Computing',
@@ -106,15 +110,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              // {
-              //   label: 'Tutorial',
-              //   to: '/docs/intro',
-              // },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -156,9 +151,13 @@ const config = {
                 label: 'Privacy Policy',
                 href: 'https://ninebit.in/privacy-policy/',
               },
-                            {
+              {
                 label: 'Terms & Conditions',
                 href: 'https://ninebit.in/terms-and-conditions/',
+              },
+              {
+                label: 'Media & Press Inquiries',
+                href: 'https://ninebit.in/press-and-media',
               },
             ],
           },
