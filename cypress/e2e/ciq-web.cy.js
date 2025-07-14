@@ -9,6 +9,10 @@ describe("SaaS App Uptime Check", () => {
     cy.login("support@ninebit.in", password);
 
     // After login, check that a key dashboard element exists
-    cy.contains("Home").should("be.visible");
+    cy.contains("CIQ API Key").should("be.visible");
+    cy.contains("CIQ API Key")
+      .next() // gets the next sibling (you can also use .parent().find(...) if needed)
+      .invoke("text")
+      .should("have.length", 36);
   });
 });
