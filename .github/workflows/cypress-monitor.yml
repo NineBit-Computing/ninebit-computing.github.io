@@ -15,6 +15,9 @@ jobs:
   cypress-monitoring:
     runs-on: ubuntu-latest
 
+    env:
+      E2E_USER_PWD: ${{ secrets.E2E_USER_PWD }}
+
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v4

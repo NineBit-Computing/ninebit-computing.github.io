@@ -10,8 +10,7 @@ describe("SaaS App Uptime Check", () => {
   });
 
   it("should allow login and load the dashboard", () => {
-    cy.login("support@ninebit.in", process.env.E2E_USER_PWD);
-
+    cy.login("testuser@example.com", "securePassword123");
 
     // After login, check that a key dashboard element exists
     cy.contains("Home").should("be.visible");
