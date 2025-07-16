@@ -9,7 +9,7 @@ it("should register a new user successfully", () => {
   cy.get('input[name="orgName"]').type("NineBit Computing");
   cy.get('button[type="submit"]').click();
   cy.screenshot('after-submit');
-  cy.contains("User already exists.").should("be.visible"); 
+  cy.contains("Almost There!").should("be.visible"); 
   cy.screenshot('after-registration');
 
 });
