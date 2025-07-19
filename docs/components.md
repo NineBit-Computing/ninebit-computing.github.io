@@ -41,18 +41,17 @@ CIQ lets you upload documents via SDK. Files are automatically chunked, normaliz
 client.ingest_file(file="files/sample.pdf", callback=on_done)
 
 ```
-</TabItem>      
+
+</TabItem>
 
 <TabItem value="js" label="JavaScript" default>
 
 ```js
-
-await client.ingestFile('files/sample.pdf');
-
+await client.ingestFile("files/sample.pdf");
 ```
-</TabItem>  
-</Tabs>    
 
+</TabItem>  
+</Tabs>
 
 ## 🧠 2. RAG Querying
 
@@ -71,18 +70,18 @@ query = "What is land breeze"
 response = client.rag_query(query=query)
 
 ```
-</TabItem>      
+
+</TabItem>
 
 <TabItem value="js" label="JavaScript" default>
 
 ```js
-query = "What is land breeze"
+query = "What is land breeze";
 const response = await client.ragQuery(query);
-
 ```
-</TabItem>  
-</Tabs>    
 
+</TabItem>  
+</Tabs>
 
 ---
 
@@ -91,6 +90,7 @@ const response = await client.ragQuery(query);
 CIQ is built to be **modular** — so whether you're building a chatbot, automating a document pipeline, or classifying insurance forms, you can use just the components you need.
 
 💡 **Example Workflows:**
+
 - RAG + Ingestion → Build a Q&A assistant over legal documents
 - Ingestion + Classification → Auto-sort resumes or risk reports
 - Taxonomy + RAG → Summarize & extract structured insights from contracts
@@ -99,9 +99,9 @@ CIQ is built to be **modular** — so whether you're building a chatbot, automat
 
 ## 🔗 What's Next?
 
-- 👉 [Quickstart Guide](/ciq-docs/quickstart)  
-- 🛠️ [CIQ SDK Reference](https://pypi.org/project/ninebit-ciq)   
-- ❓ [FAQ](/ciq-docs/faq)
+- 👉 [Quickstart Guide](/quickstart)
+- 🛠️ [CIQ SDK Reference](https://pypi.org/project/ninebit-ciq)
+- ❓ [FAQ](/faq)
 
 ---
 
