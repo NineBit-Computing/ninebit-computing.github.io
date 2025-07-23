@@ -1,8 +1,8 @@
 ---
 id: json-viewer
-title: Integration Viewer
-sidebar_label: Integration Viewer
-slug: /integration-viewer
+title: CIQ Benchmark Report
+sidebar_label: Benchmark
+slug: /benchmark
 ---
 
 # 🔍 Knowledge extraction and interaction

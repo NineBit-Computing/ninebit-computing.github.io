@@ -97,6 +97,7 @@ const config = {
           },
           { to: "/quickstart", label: "Quickstart", position: "left" },
           { to: "/components", label: "Components", position: "left" },
+          { to: "/benchmark", label: "Benchmark", position: "left" },
           { to: "https://ciq.ninebit.in", label: "Website", position: "right" },
 
           // {to: '/blog', label: 'Blog', position: 'left'},
