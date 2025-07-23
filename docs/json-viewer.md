@@ -1,6 +1,6 @@
 ---
 id: json-viewer
-title: CIQ Benchmark Report
+title: Benchmark
 sidebar_label: Benchmark
 slug: /benchmark
 ---
