@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📊 CIQ Evaluation Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3b82f6;
+      margin-bottom: 2rem;
+    }
+
+    .entry-wrapper {
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      border-bottom: 1px solid #bae6fd;
+      user-select: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    td, th {
+      padding: 0.75rem;
+      border: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: #374151;
+      width: 240px;
+      text-align: left;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div id="json-container">Loading data...</div>
+
+  <script>
+    const LABELS = {
+      cohere_generated_question: "Cohere Question",
+      ciq_generated_answer: "CIQ Answer",
+      ciq_answer_evaluation: "Answer Evaluation",
+      ciq_answer_score: "CIQ Score (Scale of 10)",
+      cohere_generated_answer: "Cohere Answer",
+      timestamp_utc: "Timestamp (UTC)"
+    };
+
+    fetch("https://docs.ninebitciq.com/ciq-py-client/index.json")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("json-container");
+        container.innerHTML = "";
+
+        // Reverse so latest is first
+        data.reverse().forEach((entry, index) => {
+          const wrapper = document.createElement("div");
+          wrapper.className = "entry-wrapper";
+
+          const detail = document.createElement("details");
+          if (index === 0) detail.open = true;
+
+          // Convert UTC timestamp to user's local timezone
+          const localDate = new Date(entry.timestamp_utc);
+          const localString = localDate.toLocaleString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            timeZoneName: "short"
+          });
+
+          const summary = document.createElement("summary");
+          summary.textContent = ` ${localString}`;
+
+          const table = document.createElement("table");
+          Object.entries(entry).forEach(([key, value]) => {
+            if (key === "timestamp_utc") return; // already used in summary
+
+            const row = document.createElement("tr");
+
+            const keyCell = document.createElement("th");
+            keyCell.textContent = LABELS[key] || key;
+
+            const valueCell = document.createElement("td");
+            valueCell.textContent = typeof value === "string"
+              ? value
+              : JSON.stringify(value, null, 2);
+
+            row.appendChild(keyCell);
+            row.appendChild(valueCell);
+            table.appendChild(row);
+          });
+
+          detail.className = "card";
+          detail.appendChild(summary);
+          detail.appendChild(table);
+
+          wrapper.appendChild(detail);
+          container.appendChild(wrapper);
+        });
+      })
+      .catch(error => {
+        document.getElementById("json-container").textContent =
+          "❌ Failed to load JSON: " + error;
+      });
+  </script>
+</body>
+</html>

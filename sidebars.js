@@ -26,6 +26,7 @@ const sidebars = {
     'ingestion',
     'ciq-components',
     'faq',
+    'json-viewer',
   
     // {
     //   type: 'category',
