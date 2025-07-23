@@ -2,7 +2,7 @@
   "name": "ciq-docs",
   "version": "1.0.2",
   "private": false,
-  "homepage": "https://ninebit-computing.github.io/ciq-docs",
+  "homepage": "https://ninebit-computing.github.io",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
