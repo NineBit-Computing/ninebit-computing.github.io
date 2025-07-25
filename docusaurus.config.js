@@ -172,7 +172,7 @@ const config = {
       algolia: {
         appId: "WA4X679QK4",
         apiKey: "b7ee116b44c92eaba0135e16fd2bb153",
-        indexName: "company_website_pages",
+        indexName: "docs-search-cr",
       },
     }),
 };
