@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "NineBit CIQ Docs",
-  tagline: "CIQ is cool",
+  tagline: "LLM Orchestration Platform",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -24,6 +24,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -85,7 +86,7 @@ const config = {
       navbar: {
         title: "DOCS",
         logo: {
-          alt: "My Site Logo",
+          alt: "NineBit CIQ Logo",
           src: "img/CIQ_Logo.png",
         },
         items: [
@@ -146,24 +147,24 @@ const config = {
             items: [
               {
                 label: "About Us",
-                href: "https://ninebit.in/ciq",
+                href: "https://ninebitciq.com/ciq",
               },
               {
                 label: "Privacy Policy",
-                href: "https://ninebit.in/privacy-policy/",
+                href: "https://ninebitciq.com/privacy-policy",
               },
               {
                 label: "Terms & Conditions",
-                href: "https://ninebit.in/terms-and-conditions/",
+                href: "https://ninebitciq.com/terms-and-conditions",
               },
               {
                 label: "Media & Press Inquiries",
-                href: "https://ninebit.in/press-and-media",
+                href: "https://ninebitciq.com/press-and-media",
               },
             ],
           },
         ],
-        copyright: `Copyright © <a href="https://ninebit.in" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">NineBit Computing</a> ${new Date().getFullYear()}.`,
+        copyright: `Copyright © <a href="https://ninebitciq.com" target="_blank" rel="noopener noreferrer" style="color:#ffffff;">NineBit Computing</a> ${new Date().getFullYear()}.`,
       },
       prism: {
         theme: prismThemes.github,

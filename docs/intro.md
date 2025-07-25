@@ -1,6 +1,6 @@
 ---
 id: home
-title: "CIQ by NineBit — Your AI Platform for Unstructured Documents"
+title: "CIQ by NineBit — LLP Orchestration Platform"
 description: "Explore the modular, secure, and developer-first platform to power document intelligence with RAG, classification, and semantic search."
 slug: /
 keywords:
@@ -21,8 +21,8 @@ CIQ is a secure, end-to-end **AI platform for unstructured documents** — desig
 
 ## 🚀 Quick Links
 
-- 📘 [Quickstart Guide](./quickstart) – Ingest data and run your first RAG query  
-- 🔐 [Authentication Setup](./authentication) – API key & token info  
+- 📘 [Quickstart Guide](./quickstart) – Ingest data and run your first RAG query
+- 🔐 [Authentication Setup](./authentication) – API key & token info
 
 ---
 
@@ -39,6 +39,7 @@ CIQ is a secure, end-to-end **AI platform for unstructured documents** — desig
 ## 🔒 Developer-First & Privacy-Ready
 
 CIQ never trains on your data. It offers:
+
 - 🔑 API-first access with simple SDKs
 - 🔐 End-to-end encryption and customer-managed keys
 - ⚙️ Flexible ingestion formats and fast indexing
@@ -48,6 +49,7 @@ CIQ never trains on your data. It offers:
 ## 🤖 The Future of Document Intelligence
 
 CIQ goes beyond traditional search:
+
 - No keyword noise — we understand context
 - Language-agnostic indexing & querying
 - Tools to transform documents into real-time answers
