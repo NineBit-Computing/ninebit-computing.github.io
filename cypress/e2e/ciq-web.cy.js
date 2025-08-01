@@ -1,6 +1,6 @@
 describe("SaaS App Uptime Check", () => {
   it("should load login page successfully", () => {
-    cy.visit("https://ciq.ninebit.in/login");
+    cy.visit("https://console.ninebitciq.com/login");
     cy.contains("Sign In").should("be.visible");
   });
 
