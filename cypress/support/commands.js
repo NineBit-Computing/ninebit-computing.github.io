@@ -2,7 +2,7 @@
 
 Cypress.Commands.add("login", (email, password) => {
   cy.intercept("POST", "/login").as("loginRequest");
-  cy.visit("https://ciq.ninebit.in/login"); // Adjust path based on your app's login route
+  cy.visit("https://console.ninebitciq.com/login"); // Adjust path based on your app's login route
 
   cy.get('input[name="email"]').type(email);
   cy.get('input[name="password"]').type(password);

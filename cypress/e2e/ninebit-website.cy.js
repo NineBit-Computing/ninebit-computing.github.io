@@ -8,7 +8,7 @@ describe("External Website Availability Checks", () => {
     cy.screenshot("docs-navigated");
   });
 
-  xit("should load https://ninebitciq.com and contain 'NineBit CIQ: Rapid Prototyping Platform for AI/ML'", () => {
+  it("should load https://ninebitciq.com and contain 'NineBit CIQ: Rapid Prototyping Platform for AI/ML'", () => {
     cy.visit("https://ninebitciq.com");
     cy.title().should(
       "eq",
