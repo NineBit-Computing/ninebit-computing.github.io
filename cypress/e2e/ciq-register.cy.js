@@ -1,5 +1,5 @@
 it("should register a new user successfully", () => {
-  cy.visit("https://ciq.ninebit.in/register");
+  cy.visit("https://console.ninebitciq.com/register");
   cy.contains("NineBit CIQ - Register").should("be.visible");
 
   cy.get('input[name="email"]').type("hrdesk@ninebit.in");
