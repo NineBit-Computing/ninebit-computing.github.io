@@ -27,6 +27,7 @@ const sidebars = {
     'ciq-components',
     'faq',
     'json-viewer',
+    'parity',
   
     // {
     //   type: 'category',
